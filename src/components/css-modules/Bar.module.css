@@ -1,0 +1,23 @@
+.bar {
+    grid-area: b;
+    background-color: teal;
+    border-radius: 10px;
+}
+  
+.bar_blocktext {
+    font-style: inherit;
+    line-height: 1.5;
+    font-size: 15pt;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: auto;
+    width: 50%;
+}
+  
+.item {
+    color: white;
+}
+
+.active {
+    color: goldenrod;
+}
