@@ -1,22 +1,22 @@
-import modules from './css-modules/Bar.module.css';
+import mod from './Bar.module.css';
 
 const Bar = () => {
     return (
-        <nav className={modules.bar}>
-            <div className={modules.bar_blocktext}>
-                <div className={`${modules.item} ${modules.active}`}>
+        <nav className={mod.bar}>
+            <div className={mod.bar_blocktext}>
+                <div className={`${mod.item} ${mod.active}`}>
                     <a>Профиль</a>
                 </div>
-                <div className={modules.item}>
+                <div className={mod.item}>
                     <a>Сообщения</a>
                 </div>
-                <div className={modules.item}>
+                <div className={mod.item}>
                     <a>Новости</a>
                 </div >
-                <div className={modules.item}>
+                <div className={mod.item}>
                     <a>Музыка</a>
                 </div>
-                <div className={modules.item}>
+                <div className={mod.item}>
                     <a>Настройки</a>
                 </div>
             </div>
