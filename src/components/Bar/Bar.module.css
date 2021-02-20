@@ -1,23 +1,42 @@
 .bar {
     grid-area: b;
-    background-color: teal;
-    border-radius: 10px;
+    background-color: green;
+    border-radius: 20px;
+    max-height: 200px;
 }
   
 .bar_blocktext {
     font-style: inherit;
     line-height: 1.5;
     font-size: 15pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 10px;
+    margin-bottom: 15px;
     margin-left: 20px;
     margin-right: auto;
     width: 50%;
 }
-  
-.item {
-    color: white;
+
+.block_settings {
+    margin-top: 30px;
 }
 
-.active {
-    color: goldenrod;
+.item a {
+    text-decoration: none;
+    color: ghostwhite;
 }
+
+.item a:hover {
+    color: goldenrod;
+    transition-duration: .1s;
+}
+
+.item .active {
+    color: rgb(255, 230, 0);;
+    font-weight: bold;
+}
+
+.item .active:hover {
+    color: rgb(255, 230, 0);;
+}
+

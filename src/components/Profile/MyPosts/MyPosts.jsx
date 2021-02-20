@@ -2,16 +2,29 @@ import mod from './MyPosts.module.css';
 import Post from './Post/Post';
 
 const MyPosts = () => {
+
+    let posts = [
+        {id: 1, text: 'ра-па-пам', likecount:15},
+        {id: 2, text: 'hey!', likecount:10},
+        {id: 3, text: 'frrrrr...', likecount:28}
+    ];
+
+    let postsElements = posts.map(
+        (p) => { return <Post text={p.text} likecount={p.likecount} />}
+    );
+
     return (
         <div>
-            Мои посты
+            <h3>Мои посты</h3>
             <div>
-                <textarea></textarea>
-                <button>Добавить пост</button>
+                <div>
+                    <textarea></textarea>
+                </div>
+                <div className={mod.addButton}>
+                    <button>Добавить</button>
+                </div>
             </div>
-            <Post message='ра-па-пам' likecount='15'/>
-            <Post message='hey!' likecount='10'/>
-            <Post message='frrrrr...' likecount='28'/>
+                {postsElements}
         </div>
     );
 }

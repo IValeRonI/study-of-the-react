@@ -1,10 +1,20 @@
 .header {
     grid-area: h;
-    background-color: teal;
+    background-color: green;
     border-radius: 10px;
   }
   
 .header img {
   width: 50px;
   height: 40px;
+}
+
+.header_text {
+  color: rgb(255, 230, 0);
+  font-size: 16pt;
+  font-weight: bolder;
+  text-align: center;
+  padding-top: 4px;
+  letter-spacing: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

@@ -1,0 +1,21 @@
+.dialogs {
+    display: grid;
+    grid-template-areas: 'a b';
+    grid-template-columns: 3fr 4fr;
+}
+
+.interlocutors .interlocutor {
+    grid-area: a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.interlocutor .active {
+    color: indigo;
+    font-weight: bold;
+}
+
+.messages .message {
+    grid-area: b;
+}
+
+
